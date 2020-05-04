@@ -1,6 +1,6 @@
 
   # project01
-  
+  ![IMAGE](https://img.shields.io/badge/license-MIT-blue.svg)
   ## Description
   This project is for a website that returns short summary of any topic along with a picture.
 

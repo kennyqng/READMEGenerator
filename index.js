@@ -27,7 +27,9 @@ inquirer
         },
         {
             message: "What kind of license should your project have?",
-            name: "license"
+            name: "license",
+            type: "list",
+            choices: ["MIT", "APACHE%2.0", "GPL%3.0", "BSD%3", "None"]
         },
         {
             message: "What command should be run to install dependencies?",
@@ -47,7 +49,8 @@ inquirer
         },
     ])
     .then(function(data){
-        fs.writeFile("test.md", md.generateMarkdown(data), function(err) {
+
+        fs.writeFile("README.md", md.generateMarkdown(data), function(err) {
 
             if (err) {
               console.log(err);

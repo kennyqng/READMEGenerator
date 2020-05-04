@@ -1,24 +1,19 @@
 function generateMarkdown(data) {
     return `
   # ${data.project}
-  ${data.website}
-  
+  [![IMAGE](https://img.shields.io/badge/license-${data.license}-blue.svg)]
+
   ## Description
   ${data.description}
 
   ## Table of Content
-
   * [Installation](#installation)
-
   * [Usage](#usage)
-
   * [License](#license)
-
   * [Contributing](#contributing)
-
   * [Tests](#tests)
-
   * [Questions](#question)
+
 
   ## Installation
 ${data.installation}
@@ -37,7 +32,7 @@ ${data.installation}
   ${data.tests}
 
   ## Questions
-  If you have any questions about the repo or to open an issue, please contact ${data.username} directly at ${data.email}.
+  If you have any questions about the repo or to open an issue, please contact [${data.username}](${data.website}/${data.username}) directly at ${data.email}.
 
 
   `;
